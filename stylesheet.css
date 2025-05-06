@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header, footer {
+    background: #004080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    background: #ddd;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+
+section {
+    padding: 2px;
+    background: white;
+    margin: 1px;
+    border-radius: 8px;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: #333 solid 1px;
+}
+
+.project-card img {
+    width: 120px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit:fill;
+}
+
+.project-info {
+    flex-grow: 1;
+}
+
+.project-info h3 {
+    margin: 0 0 10px;
+    color: #004080;
+}
+
+.project-info a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.project-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-card img {
+        width: 100%;
+        max-width: 200px;
+    }
+}
